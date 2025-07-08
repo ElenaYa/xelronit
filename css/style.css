@@ -3330,7 +3330,7 @@ section:hover .section-title h2::before {
 .services-box .ss-btn2 {
     width: 60px;
     height: 60px;
-    background: #FF7D440% 0% no-repeat padding-box;
+    background: #FF7D44 0% no-repeat padding-box;
     box-shadow: 0px 16px 32px #FF7D4433;
     display: none;
     color: #fff;
@@ -4139,7 +4139,7 @@ section:hover .section-title h2::before {
     top: 50%;
     height: 90px;
     width: 90px;
-    background: transparent linear-gradient(90deg, #FF7D440%, #FF7D44100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #FF7D44, #FF7D44) 0% 0% no-repeat padding-box;
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -5150,7 +5150,7 @@ section:hover .section-title h2::before {
 }
 
 .counter-area .row div:nth-child(4) .single-counter {
-    display: ;
+    display: block;
     border-right: none;
 }
 
@@ -7995,8 +7995,7 @@ li.has-sub.has-mega-menu:hover > ul > li > ul {
 
 }
 
-.sidebar-widget .widget li.page_item_has_children,
-    {
+.sidebar-widget .widget li.page_item_has_children {
     padding-bottom: 0;
 }
 
@@ -9559,7 +9558,7 @@ p.lost-password a:hover {
 
 .coupon-info p.form-row input[type="submit"]:hover,
 p.checkout-coupon input[type="submit"]:hover {
-    background: #FF7D44none repeat scroll 0 0;
+    background: #FF7D44 repeat scroll 0 0;
 }
 
 .coupon-info p.form-row input[type="checkbox"] {
@@ -11095,7 +11094,7 @@ p.checkout-coupon input[type="text"] {
 
 .process-area .col-lg-3.col-md-12:nth-child(2) .process-icon,
 .process-area .col-lg-3.col-md-12:nth-child(2) .no {
-    background: #FF7D440% 0% no-repeat padding-box;
+    background: #FF7D44 0% no-repeat padding-box;
 }
 
 .process-area .col-lg-3.col-md-12:nth-child(3) .process-icon,
