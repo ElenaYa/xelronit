@@ -11,38 +11,54 @@ $(function() {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
 
-		// Serialize the form data.
-		var formData = $(form).serialize();
+		// Показуємо pop-up модальне вікно замість текстового повідомлення
+		showSuccessModal();
 
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#contact-form input,#contact-form textarea').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
+		// Clear the form.
+		$('#contact-form input,#contact-form textarea').val('');
 	});
 
+	// Newsletter forms
+	$('form.newslater').submit(function(e) {
+		e.preventDefault();
+		
+		// Показуємо повідомлення про успішну підписку
+		var button = $(this).find('button[type="submit"]');
+		var originalText = button.text();
+		
+		button.text('Успішно!').prop('disabled', true);
+		
+		// Повертаємо оригінальний текст через 3 секунди
+		setTimeout(function() {
+			button.text(originalText).prop('disabled', false);
+		}, 3000);
+		
+		// Очищуємо форму
+		$(this).find('input[type="text"], input[type="email"]').val('');
+	});
+
+});
+
+// Функція для показу модального вікна
+function showSuccessModal() {
+	$('#successModal').fadeIn(300);
+}
+
+// Функція для закриття модального вікна
+function closeSuccessModal() {
+	$('#successModal').fadeOut(300);
+}
+
+// Закриття модального вікна при кліку на фон
+$(document).on('click', '#successModal', function(e) {
+	if (e.target === this) {
+		closeSuccessModal();
+	}
+});
+
+// Закриття модального вікна при натисканні клавіші Escape
+$(document).keydown(function(e) {
+	if (e.keyCode === 27) { // Escape key
+		closeSuccessModal();
+	}
 });
