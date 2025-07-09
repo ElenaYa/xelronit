@@ -637,7 +637,7 @@ label {
     background: #D4AF37;
 }
 
-body.home .main-menu ul li a[href="index.html"],
+body.home .main-menu ul li a[href="/"],
 body.about .main-menu ul li a[href="about.html"],
 body.services .main-menu ul li a[href="services.html"],
 body.blog .main-menu ul li a[href="blog.html"],
@@ -649,7 +649,7 @@ body.pricing .main-menu ul li a[href="pricing.html"] {
     color: #D4AF37;
 }
 
-body.home .main-menu ul li a[href="index.html"]::before,
+body.home .main-menu ul li a[href="/"]::before,
 body.about .main-menu ul li a[href="about.html"]::before,
 body.services .main-menu ul li a[href="services.html"]::before,
 body.blog .main-menu ul li a[href="blog.html"]::before,
