@@ -1,29 +1,4 @@
-﻿/* CSS Index
------------------------------------
-1. Theme default css
-2. header
-3. slider
-4. about
-5. features
-6. services
-7. video
-8. choose
-9. brand
-10. work-process
-11. team
-12. counter
-13. cta
-14. testimonial
-15. blog
-16. pagination
-17. f-cta
-18. pricing
-19. contact
-20. footer
-
-*/
-
-/* 1. Theme default css */
+﻿
 body {
     font-family: "Inter", serif;
     font-size: 16px;
@@ -33,7 +8,6 @@ body {
     line-height: 26px;
 }
 
-/*--- LOADING ---*/
 #loading {
     background-image: url("../img/logo/logo.png");
     background-position: center center;
@@ -337,7 +311,6 @@ label {
 }
 
 
-/* button style */
 
 .btn {
     color: #fff;
@@ -405,7 +378,6 @@ label {
     margin-left: 0px;
 }
 
-/* scrollUp */
 #scrollUp {
     background: #D4AF37;
     height: 45px;
@@ -425,7 +397,7 @@ label {
     background: #D4AF37;
 }
 
-/* 2. header */
+
 
 .header-top {
     padding-top: 40px;
@@ -665,7 +637,6 @@ label {
     background: #D4AF37;
 }
 
-/* Active page styles */
 body.home .main-menu ul li a[href="index.html"],
 body.about .main-menu ul li a[href="about.html"],
 body.services .main-menu ul li a[href="services.html"],
@@ -1419,7 +1390,6 @@ body.pricing .main-menu ul li a[href="pricing.html"]::before {
     left: 30px;
 }
 
-/* breadcrumb */
 .breadcrumb-wrap.text-left {
     margin-top: 50px;
 }
@@ -1526,7 +1496,6 @@ body.pricing .main-menu ul li a[href="pricing.html"]::before {
     font-size: 18px;
 }
 
-/* 3. slider */
 .overlay-bg-01 {
     position: absolute;
     left: 0;
@@ -2128,7 +2097,6 @@ body.pricing .main-menu ul li a[href="pricing.html"]::before {
     color: #D4AF37;
 }
 
-/* 4. about */
 
 .about-icon {
     position: absolute;
@@ -2653,7 +2621,6 @@ body.pricing .main-menu ul li a[href="pricing.html"]::before {
     color: #D4AF37;
 }
 
-/* 5. features */
 .features-services-area .container {
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1.732px 60px 0px rgba(0, 0, 0, 0.1);
@@ -2780,7 +2747,6 @@ section:hover .section-title h2::before {
     color: #D4AF37;
 }
 
-/* 6. services */
 .feature-area {
 
     margin-top: -80px;
@@ -4045,7 +4011,6 @@ section:hover .section-title h2::before {
     margin-top: -90px;
 }
 
-/* steps area */
 .steps-area h2,
 .steps-area h3 {
     color: #fff;
@@ -4138,7 +4103,6 @@ section:hover .section-title h2::before {
     margin-left: -305px;
 }
 
-/* 7. video */
 
 .video-position {
     position: absolute;
@@ -4319,7 +4283,6 @@ section:hover .section-title h2::before {
     padding-right: 5%;
 }
 
-/* 8. choose */
 .why-video {
     position: relative;
 }
@@ -4469,7 +4432,6 @@ section:hover .section-title h2::before {
     color: #1F53DB;
 }
 
-/* 9. brand */
 .single-brand {
     text-align: center;
 }
@@ -4484,7 +4446,6 @@ section:hover .section-title h2::before {
 }
 
 
-/* 10. work-process */
 .wp-bg {
     background-position: center;
     background-size: cover;
@@ -4620,7 +4581,6 @@ section:hover .section-title h2::before {
     margin-bottom: 0;
 }
 
-/* 11. team */
 .team-area .single-team {
     margin-left: 0;
     margin-right: 0;
@@ -4992,7 +4952,6 @@ section:hover .section-title h2::before {
     padding-top: 5px;
 }
 
-/* 12. project */
 .project h2 {}
 
 .single-project .project-info {
@@ -5153,7 +5112,6 @@ section:hover .section-title h2::before {
     color: #003B49;
 }
 
-/* 12. counter */
 .counter-area .container {
     background: #D4AF37;
     color: #fff;
@@ -5266,7 +5224,6 @@ section:hover .section-title h2::before {
     margin-top: 10px;
 }
 
-/* Classes */
 .class-item {
     float: left;
     margin-left: 15px;
@@ -5424,7 +5381,6 @@ section:hover .section-title h2::before {
     right: -60px;
 }
 
-/* 13. cta */
 .cta-bg {
     position: relative;
     background-size: cover;
@@ -5516,7 +5472,6 @@ section:hover .section-title h2::before {
     padding-bottom: 0;
 }
 
-/* 14. testimonial */
 
 .testimonial-area .container {
     z-index: 1;
@@ -5954,7 +5909,6 @@ section:hover .section-title h2::before {
     display: inline-block;
 }
 
-/* faq */
 
 .faq-area .section-title h2 {
     color: #fff;
@@ -6041,7 +5995,6 @@ section:hover .section-title h2::before {
     font-size: 26px;
 }
 
-/* 15. blog */
 
 .home-blog-active .product {
     margin-left: 15px;
@@ -6536,7 +6489,6 @@ section:hover .section-title h2::before {
 }
 
 
-/* 18. pricing */
 .pricing-area h2 {
     color: #fff;
 }
@@ -6878,7 +6830,6 @@ section:hover .section-title h2::before {
     border: 1px solid #D4AF37;
 }
 
-/* 19. contact */
 .contact-bg02 {
     background: #F5F5F5;
     padding: 100px;
@@ -7045,7 +6996,6 @@ section:hover .section-title h2::before {
     z-index: -1;
 }
 
-/* booking */
 .booking {
     z-index: 1;
     position: relative;
@@ -7108,7 +7058,6 @@ section:hover .section-title h2::before {
     color: #D4AF37;
 }
 
-/* meal */
 .populer-meal ul {}
 
 .populer-meal li {
@@ -7174,7 +7123,6 @@ section:hover .section-title h2::before {
 }
 
 
-/* 20. footer */
 .recent-blog-footer li {
     display: flex;
     margin-bottom: 25px !important;
@@ -7450,7 +7398,6 @@ section:hover .section-title h2::before {
     border-radius: 0;
 }
 
-/* Fillter css */
 
 .portfolio .col2 .grid-item {
     width: 49%;
@@ -7778,7 +7725,6 @@ section:hover .section-title h2::before {
 }
 
 
-/* 21. Menu Theme dropdown default css */
 .f-cta-icon {
     float: left;
     margin-right: 30px;
@@ -7878,7 +7824,6 @@ section:hover .section-title h2::before {
     color: #D4AF37;
 }
 
-/* 23. mega menu */
 
 .offcanvas-menu .has-mega-menu ul {
     display: none;
@@ -8030,7 +7975,6 @@ li.has-sub.has-mega-menu:hover > ul > li > ul {
     display: block;
 }
 
-/* 22. Theme sidebar widge css */
 .sidebar-widget a {
     color: #777;
 }
@@ -8914,7 +8858,6 @@ pre cite {
     min-height: 200px;
 }
 
-/* Here's the new CSS to add... */
 
 .admin-bar .menu-area {}
 
@@ -8926,7 +8869,6 @@ pre cite {
 }
 
 
-/* 24. call */
 .call-text {
     padding: 120px 0 0 60px;
 }
@@ -8957,7 +8899,6 @@ pre cite {
 }
 
 
-/* Shop */
 .shop-area select {
     padding: 10px;
 }
@@ -9469,7 +9410,6 @@ img {
     }
 }
 
-/* Cart */
 .table-content table {
     background: #ffffff;
     border-color: #eaedff;
@@ -10049,7 +9989,6 @@ p.checkout-coupon input[type="text"] {
     margin-bottom: 19px;
 }
 
-/* 24. Login */
 .zcube-login {
     padding: 90px;
     border: 2px solid #eaedff;
@@ -10756,7 +10695,6 @@ p.checkout-coupon input[type="text"] {
 }
 
 
-/* Lower Content */
 
 .project-detail .lower-content {
     position: relative;
@@ -10872,7 +10810,6 @@ p.checkout-coupon input[type="text"] {
     color: #fff;
 }
 
-/* Load More Option */
 .load-more-option {
     position: relative;
     display: block;
@@ -10960,7 +10897,6 @@ p.checkout-coupon input[type="text"] {
     z-index: 1;
 }
 
-/* 8. newslater-area */
 
 .newslater .input-bg {
     background: #3A3D3E;
@@ -11115,7 +11051,6 @@ p.checkout-coupon input[type="text"] {
     margin: 0 -40px;
 }
 
-/* 8. search-popup */
 .search-popup {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
@@ -11196,7 +11131,6 @@ p.checkout-coupon input[type="text"] {
     transform: translate(0, -62px);
 }
 
-/* 24. process-area */
 .process-area h2 {
     color: #fff;
 }
@@ -11256,7 +11190,6 @@ p.checkout-coupon input[type="text"] {
     font-weight: 600;
 }
 
-/* 24. skills-area */
 
 .feature-img {
     margin-left: -330px;
@@ -11275,7 +11208,6 @@ p.checkout-coupon input[type="text"] {
     color: #D4AF37;
 }
 
-/* 24. skills-area */
 
 .team-area-content .skill-name {
     color: #003B49;
@@ -11575,7 +11507,6 @@ p.checkout-coupon input[type="text"] {
     margin-left: -400px;
 }
 
-/* 27. map-area */
 .map-img li {
     position: absolute;
     display: inline-block;
@@ -11802,7 +11733,6 @@ p.checkout-coupon input[type="text"] {
 }
 
 
-/* Here's the new blog dtl to add... */
 
 .quote-post {
     background-position: center;
@@ -12911,7 +12841,6 @@ blockquote footer {
     padding-left: 20px;
 }
 
-/* 16. pagination */
 .pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12987,7 +12916,6 @@ blockquote footer {
     background: #D4AF37;
 }
 
-/* 17. f-cta */
 .f-cta-area {
     background: #fff;
     margin-left: 260px;
@@ -13077,7 +13005,6 @@ div.single-cta:last-child {
     margin: auto;
 }
 
-/* --- blog new css ----*/
 
 .bsingle__content .meta-info ul {
     padding-bottom: 0;
