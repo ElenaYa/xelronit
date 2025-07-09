@@ -1,0 +1,474 @@
+<!doctype html>
+<html class="no-js" lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>404 - Сторінка не знайдена | Chronos Forge</title>
+    <meta name="description" content="Сторінка не знайдена. Поверніться до Ковальні Історій та продовжуйте творити епічні наративи з Chronos Forge.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-pro/css/all.min.css">
+    <link rel="stylesheet" href="css/dripicons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* 404 Page Custom Styles */
+        .error-404-area {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #1A1B2E 0%, #0F0F23 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-404-area::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .error-content {
+            text-align: center;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .error-number {
+            font-size: 200px;
+            font-weight: bold;
+            line-height: 1;
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 50px rgba(212, 175, 55, 0.5);
+            margin-bottom: 30px;
+            animation: divineGlow 3s ease-in-out infinite alternate;
+        }
+        
+        .error-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #D4AF37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .error-subtitle {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .error-description {
+            font-size: 16px;
+            color: #B0B0B0;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .error-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid;
+        }
+        
+        .error-btn-primary {
+            background: #D4AF37;
+            color: #0F0F23;
+            border-color: #D4AF37;
+        }
+        
+        .error-btn-primary:hover {
+            background: transparent;
+            color: #D4AF37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .error-btn-secondary {
+            background: transparent;
+            color: #fff;
+            border-color: #fff;
+        }
+        
+        .error-btn-secondary:hover {
+            background: #fff;
+            color: #0F0F23;
+            transform: translateY(-2px);
+        }
+        
+        .mythic-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .mythic-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #D4AF37;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        
+        .mythic-particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .mythic-particle:nth-child(2) { top: 60%; left: 20%; animation-delay: 1s; }
+        .mythic-particle:nth-child(3) { top: 30%; left: 80%; animation-delay: 2s; }
+        .mythic-particle:nth-child(4) { top: 70%; left: 70%; animation-delay: 3s; }
+        .mythic-particle:nth-child(5) { top: 40%; left: 50%; animation-delay: 4s; }
+        
+        @keyframes divineGlow {
+            from {
+                text-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            }
+            to {
+                text-shadow: 0 0 60px rgba(212, 175, 55, 0.8), 0 0 90px rgba(212, 175, 55, 0.4);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px) scale(1);
+                opacity: 0.7;
+            }
+            50% { 
+                transform: translateY(-20px) scale(1.2);
+                opacity: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 120px;
+            }
+            .error-title {
+                font-size: 32px;
+            }
+            .error-subtitle {
+                font-size: 20px;
+            }
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Preloader  -->
+    <div id="preloader">
+        <div id="loading"> </div>
+    </div>
+    <!--  Preloader end  -->
+    <!-- header -->
+    <header class="header-area header-two">
+        <div id="header-sticky" class="menu-area">
+            <div class="container">
+                <div class="second-menu">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-5">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+
+                            <div class="main-menu text-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Ковальня Історій</a></li>
+                                        <li><a href="about.html">Твої Наративи</a></li>
+                                        <li><a href="services.html">Спільнота Ковалів</a></li>
+                                        <li><a href="pricing.html">Кузня Можливостей</a></li>
+                                        <li><a href="contact.html">Контакти</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block text-right">
+                            <div class="header-cta">
+                                <ul>
+                                    <li>
+                                        <a href="contact.html" class="top-btn">Пробний період</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+    <!-- offcanvas-area -->
+    <div class="offcanvas-menu">
+        <span class="menu-close"><i class="fas fa-times"></i></span>
+        <form role="search" id="searchform" class="searchform" action="#">
+            <input type="text" name="s" id="search" placeholder="Пошук" />
+            <button><i class="fa fa-search"></i></button>
+        </form>
+        <div id="cssmenu3" class="menu-one-page-menu-container">
+            <ul class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.html">Ковальня Історій</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">Твої Наративи</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="services.html">Спільнота Ковалів</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.html">Кузня Можливостей</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+        <div id="cssmenu2" class="menu-one-page-menu-container">
+            <ul id="menu-one-page-menu-12" class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>info@xelronit.com</span></a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>вулиця Ділова, 10-12, Київ</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="offcanvas-overly"></div>
+    <!-- offcanvas-end -->
+    <!-- main-area -->
+    <main>
+
+        <!-- 404 Error Area -->
+        <section class="error-404-area">
+            <div class="mythic-elements">
+                <div class="mythic-particle"></div>
+                <div class="mythic-particle"></div>
+                <div class="mythic-particle"></div>
+                <div class="mythic-particle"></div>
+                <div class="mythic-particle"></div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="error-content wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
+                            <div class="error-number">404</div>
+                            <h1 class="error-title">Божественна Помилка</h1>
+                            <h3 class="error-subtitle">Сторінка Загубилась в Туманах Олімпу</h3>
+                            <p class="error-description">
+                                На жаль, сторінка, яку ви шукаете, зникла у вирі міфічних туманів. Можливо, вона була перенесена богами до іншого виміру, або ж просто загубилась серед безкрайніх наративних світів Chronos Forge. Але не переживайте! Ваша подорож у ковальні історій продовжується.
+                            </p>
+                            <div class="error-actions">
+                                <a href="index.html" class="error-btn error-btn-primary">
+                                    <i class="fas fa-home"></i> Повернутися до Ковальні
+                                </a>
+                                <a href="contact.html" class="error-btn error-btn-secondary">
+                                    <i class="fas fa-envelope"></i> Повідомити про Проблему
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Helpful Links Section -->
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h4 style="color: #D4AF37; margin-bottom: 30px;">Можливо, вас зацікавить:</h4>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="helpful-link-card" style="background: rgba(26, 27, 46, 0.8); padding: 20px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                                        <i class="fas fa-hammer" style="font-size: 30px; color: #D4AF37; margin-bottom: 15px;"></i>
+                                        <h5 style="color: #fff; margin-bottom: 10px;">Ковальня Історій</h5>
+                                        <p style="color: #B0B0B0; font-size: 14px;">Почніть створювати епічні наративи</p>
+                                        <a href="index.html" style="color: #D4AF37; text-decoration: none;">Перейти →</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="helpful-link-card" style="background: rgba(26, 27, 46, 0.8); padding: 20px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                                        <i class="fas fa-users" style="font-size: 30px; color: #D4AF37; margin-bottom: 15px;"></i>
+                                        <h5 style="color: #fff; margin-bottom: 10px;">Спільнота</h5>
+                                        <p style="color: #B0B0B0; font-size: 14px;">Приєднайтесь до ковалів історій</p>
+                                        <a href="services.html" style="color: #D4AF37; text-decoration: none;">Перейти →</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="helpful-link-card" style="background: rgba(26, 27, 46, 0.8); padding: 20px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                                        <i class="fas fa-coins" style="font-size: 30px; color: #D4AF37; margin-bottom: 15px;"></i>
+                                        <h5 style="color: #fff; margin-bottom: 10px;">Підписка</h5>
+                                        <p style="color: #B0B0B0; font-size: 14px;">30 днів безкоштовного періоду</p>
+                                        <a href="pricing.html" style="color: #D4AF37; text-decoration: none;">Перейти →</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="helpful-link-card" style="background: rgba(26, 27, 46, 0.8); padding: 20px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                                        <i class="fas fa-scroll" style="font-size: 30px; color: #D4AF37; margin-bottom: 15px;"></i>
+                                        <h5 style="color: #fff; margin-bottom: 10px;">Наративи</h5>
+                                        <p style="color: #B0B0B0; font-size: 14px;">Дізнайтесь більше про наші інструменти</p>
+                                        <a href="about.html" style="color: #D4AF37; text-decoration: none;">Перейти →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 404 Error Area End -->
+
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer -->
+    <footer class="footer-bg footer-p">
+        <div class="footer-top  pt-90 pb-40">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title mb-30">
+                                <img src="img/logo/f_logo.png" alt="img">
+                            </div>
+                            <p class="pr-90">Chronos Forge — це революційна платформа для створення наративних ігор, де кожен учасник стає співавтором епічних історій у світі міфології Олімпу.</p>
+                            <div class="info-box">
+                                <div class="icon">
+                                    <div class="img"><img src="img/icon/f-email-icon.png" alt="img"></div>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">info@xelronit.com</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h2>навігація</h2>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="about.html">Твої Наративи</a></li>
+                                    <li><a href="services.html">Спільнота Ковалів</a></li>
+                                    <li><a href="pricing.html">Кузня Можливостей</a></li>
+                                    <li><a href="contact.html">Контакти</a></li>
+                                    <li><a href="index.html">Ковальня Історій</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h2>правова інформація</h2>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="privacy-policy.html">Політика конфіденційності</a></li>
+                                    <li><a href="terms-of-service.html">Умови користування</a></li>
+                                    <li><a href="cookie-policy.html">Політика Cookie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h2>зв'яжіться з нами</h2>
+                            </div>
+                            <div class="f-contact">
+                                <ul>
+                                    <li>
+                                        <span class="icon"> <i class="icon fa fa-phone"></i></span>
+                                        <span><a href="tel:+380501234567">+38 050 723 95 67</a></span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"><i class="icon fa fa-envelope"></i></span>
+                                        <span>
+                                            <a href="mailto:info@xelronit.com">info@xelronit.com</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon"> <i class="icon fa fa-map-marker-check"></i></span>
+                                        <span><a href="https://maps.google.com/?q=вулиця+Ділова+10-12+Київ+02000" target="_blank">вулиця Ділова, 10-12,<br> Київ, 02000</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <div class="col-lg-12 col-md-12">
+                        Copyright © 2025 Chronos Forge by <a href="#">xelronit.com</a> - Всі права захищені
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+    
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js_isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <!--gsap js file -->
+    <script src="js/gsap.min.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html> 
