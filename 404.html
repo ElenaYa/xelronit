@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="robots" content="index, follow">
-    <title>404 - Сторінку не знайдено | Chronos Forge</title>
+    <title>404 - Сторінка не знайдена | Chronos Forge</title>
     <meta name="description" content="Сторінка не знайдена. Поверніться до Ковальні Історій та продовжуйте творити епічні наративи з Chronos Forge.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    
+    <!-- Place favicon.png in the root directory -->
+
+    <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <style>
+        /* 404 Page Custom Styles */
         .error-404-area {
             padding: 120px 0;
             background: linear-gradient(135deg, #1A1B2E 0%, #0F0F23 100%);
@@ -189,9 +191,12 @@
 </head>
 
 <body class="error">
+    <!--  Preloader  -->
     <div id="preloader">
         <div id="loading"> </div>
     </div>
+    <!--  Preloader end  -->
+    <!-- header -->
     <header class="header-area header-two">
         <div id="header-sticky" class="menu-area">
             <div class="container">
@@ -235,6 +240,8 @@
             </div>
         </div>
     </header>
+    <!-- header-end -->
+    <!-- offcanvas-area -->
     <div class="offcanvas-menu">
         <span class="menu-close"><i class="fas fa-times"></i></span>
         <form role="search" id="searchform" class="searchform" action="#">
@@ -258,8 +265,11 @@
         </div>
     </div>
     <div class="offcanvas-overly"></div>
+    <!-- offcanvas-end -->
+    <!-- main-area -->
     <main>
 
+        <!-- 404 Error Area -->
         <section class="error-404-area">
             <div class="mythic-elements">
                 <div class="mythic-particle"></div>
@@ -290,7 +300,8 @@
                         </div>
                     </div>
                 </div>
-
+                
+                <!-- Helpful Links Section -->
                 <div class="row mt-5">
                     <div class="col-lg-12">
                         <div class="text-center">
@@ -334,9 +345,12 @@
                 </div>
             </div>
         </section>
+        <!-- 404 Error Area End -->
 
     </main>
+    <!-- main-area-end -->
 
+    <!-- footer -->
     <footer class="footer-bg footer-p">
         <div class="footer-top  pt-90 pb-40">
             <div class="container">
@@ -428,7 +442,9 @@
             </div>
         </div>
     </footer>
-
+    <!-- footer-end -->
+    
+    <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -447,7 +463,9 @@
     <script src="js/parallax-scroll.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/element-in-view.js"></script>
+    <!--gsap js file -->
     <script src="js/gsap.min.js"></script>
+    <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>

@@ -3,9 +3,11 @@ jQuery(function() {
 });
 
 var ParallaxScroll = {
+    /* PUBLIC VARIABLES */
     showLogs: false,
     round: 1000,
 
+    /* PUBLIC FUNCTIONS */
     init: function() {
         this._log("init");
         if (this._inited) {
@@ -26,10 +28,12 @@ var ParallaxScroll = {
         this._onScroll(true);
     },
 
+    /* PRIVATE VARIABLES */
     _inited: false,
     _properties: ['x', 'y', 'z', 'rotateX', 'rotateY', 'rotateZ', 'scaleX', 'scaleY', 'scaleZ', 'scale'],
     _requestAnimationFrame:null,
 
+    /* PRIVATE FUNCTIONS */
     _log: function(message) {
         if (this.showLogs) console.log("Parallax Scroll / " + message);
     },
