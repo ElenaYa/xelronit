@@ -247,6 +247,7 @@
                                 </h2>
                             </div>
                             <form action="#" class="contact-form mt-30" id="contact-form">
+                                <input type="hidden" name="gclid" id="gclid_field">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="contact-field p-relative c-name mb-20">
@@ -541,6 +542,48 @@
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+<script>
+// Get GCLID from URL
+function getGclid() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('gclid');
+}
+
+// Set GCLID to form field and localStorage
+function setGclid() {
+    const gclid = getGclid();
+    if (gclid) {
+        // Save to form field
+        document.getElementById('gclid_field').value = gclid;
+        // Save to localStorage for future use
+        localStorage.setItem('gclid', gclid);
+    } else {
+        // Try to get from localStorage if not in URL
+        const storedGclid = localStorage.getItem('gclid');
+        if (storedGclid) {
+            document.getElementById('gclid_field').value = storedGclid;
+        }
+    }
+}
+
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data including GCLID
+    const formData = new FormData(this);
+    const gclid = formData.get('gclid');
+    
+    // Here you would typically send the data to your server
+    console.log('Form submitted with GCLID:', gclid);
+    
+   
+});
+
+// Run when page loads
+document.addEventListener('DOMContentLoaded', setGclid);
+</script>
 </body>
 
 </html>
